@@ -19,7 +19,6 @@ describe "Artist" do
 
     describe "#songs" do
       it "has many songs" do
-        binding.pry
         expect(adele.songs).to be_a(Array)
         hello = Song.new("Hello")
         hello.artist = adele
